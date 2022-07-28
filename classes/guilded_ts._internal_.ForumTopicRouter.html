@@ -130,7 +130,7 @@
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="edit" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>edit</span><a href="#edit" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-<li class="tsd-signature tsd-anchor-link" id="edit.edit-1">edit<span class="tsd-signature-symbol">(</span>channelId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, forumTopicId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, payload<span class="tsd-signature-symbol">: </span><a href="../modules/guilded_ts._internal_.html" class="tsd-signature-type" data-tsd-kind="Namespace">&lt;internal&gt;</a><span class="tsd-signature-symbol">.</span><a href="../interfaces/guilded_ts._internal_.APIForumTopicEditPayload.html" class="tsd-signature-type" data-tsd-kind="Interface">APIForumTopicEditPayload</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/guilded_ts._internal_.html" class="tsd-signature-type" data-tsd-kind="Namespace">&lt;internal&gt;</a><span class="tsd-signature-symbol">.</span><a href="../interfaces/guilded_ts._internal_.APIForumTopic.html" class="tsd-signature-type" data-tsd-kind="Interface">APIForumTopic</a><span class="tsd-signature-symbol">&gt;</span><a href="#edit.edit-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="edit.edit-1">edit<span class="tsd-signature-symbol">(</span>channelId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, forumTopicId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, payload<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/guilded_ts._internal_.html" class="tsd-signature-type" data-tsd-kind="Namespace">&lt;internal&gt;</a><span class="tsd-signature-symbol">.</span><a href="../interfaces/guilded_ts._internal_.APIForumTopicPayload.html" class="tsd-signature-type" data-tsd-kind="Interface">APIForumTopicPayload</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/guilded_ts._internal_.html" class="tsd-signature-type" data-tsd-kind="Namespace">&lt;internal&gt;</a><span class="tsd-signature-symbol">.</span><a href="../interfaces/guilded_ts._internal_.APIForumTopic.html" class="tsd-signature-type" data-tsd-kind="Interface">APIForumTopic</a><span class="tsd-signature-symbol">&gt;</span><a href="#edit.edit-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Edit a forum topic on Guilded.</p>
 
@@ -151,7 +151,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the forum topic to edit.</p>
 </div></li>
 <li>
-<h5>payload: <a href="../modules/guilded_ts._internal_.html" class="tsd-signature-type" data-tsd-kind="Namespace">&lt;internal&gt;</a><span class="tsd-signature-symbol">.</span><a href="../interfaces/guilded_ts._internal_.APIForumTopicEditPayload.html" class="tsd-signature-type" data-tsd-kind="Interface">APIForumTopicEditPayload</a></h5>
+<h5>payload: <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/guilded_ts._internal_.html" class="tsd-signature-type" data-tsd-kind="Namespace">&lt;internal&gt;</a><span class="tsd-signature-symbol">.</span><a href="../interfaces/guilded_ts._internal_.APIForumTopicPayload.html" class="tsd-signature-type" data-tsd-kind="Interface">APIForumTopicPayload</a><span class="tsd-signature-symbol">&gt;</span></h5>
 <div class="tsd-comment tsd-typography"><p>The payload of the forum topic.</p>
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/guilded_ts._internal_.html" class="tsd-signature-type" data-tsd-kind="Namespace">&lt;internal&gt;</a><span class="tsd-signature-symbol">.</span><a href="../interfaces/guilded_ts._internal_.APIForumTopic.html" class="tsd-signature-type" data-tsd-kind="Interface">APIForumTopic</a><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
@@ -228,14 +228,17 @@
 <li class="tsd-kind-module"><a href="../modules/_guildedts_builders.html">@guildedts/builders -<wbr/> v0.2.8</a>
 <ul>
 <li class="tsd-kind-namespace tsd-parent-kind-module"><a href="../modules/_guildedts_builders._internal_.html">&lt;internal&gt;</a></li></ul></li>
-<li class="tsd-kind-module"><a href="../modules/_guildedts_rest.html">@guildedts/rest -<wbr/> v0.10.1</a>
+<li class="tsd-kind-module"><a href="../modules/_guildedts_framework.html">@guildedts/framework -<wbr/> v0.2.1</a>
+<ul>
+<li class="tsd-kind-namespace tsd-parent-kind-module"><a href="../modules/_guildedts_framework._internal_.html">&lt;internal&gt;</a></li></ul></li>
+<li class="tsd-kind-module"><a href="../modules/_guildedts_rest.html">@guildedts/rest -<wbr/> v0.10.2</a>
 <ul>
 <li class="tsd-kind-namespace tsd-parent-kind-module"><a href="../modules/_guildedts_rest._internal_.html">&lt;internal&gt;</a></li></ul></li>
 <li class="tsd-kind-module"><a href="../modules/_guildedts_ws.html">@guildedts/ws -<wbr/> v0.4.3</a>
 <ul>
 <li class="tsd-kind-namespace tsd-parent-kind-module"><a href="../modules/_guildedts_ws._internal_.html">&lt;internal&gt;</a></li></ul></li>
-<li class="tsd-kind-module"><a href="../modules/guilded_api_typings.html">guilded-<wbr/>api-<wbr/>typings -<wbr/> v0.8.2</a></li>
-<li class="current tsd-kind-module"><a href="../modules/guilded_ts.html">guilded.ts -<wbr/> v0.13.1</a>
+<li class="tsd-kind-module"><a href="../modules/guilded_api_typings.html">guilded-<wbr/>api-<wbr/>typings -<wbr/> v0.9.0</a></li>
+<li class="current tsd-kind-module"><a href="../modules/guilded_ts.html">guilded.ts -<wbr/> v0.14.0</a>
 <ul>
 <li class="current tsd-kind-namespace tsd-parent-kind-module"><a href="../modules/guilded_ts._internal_.html">&lt;internal&gt;</a></li></ul></li></ul></li></ul></div></details></nav>
 <nav class="tsd-navigation secondary menu-sticky">
