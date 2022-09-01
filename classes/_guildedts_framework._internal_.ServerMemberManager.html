@@ -54,6 +54,7 @@
 <a href="_guildedts_framework._internal_.ServerMemberManager.html#removeNickname" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>remove<wbr/>Nickname</span></a>
 <a href="_guildedts_framework._internal_.ServerMemberManager.html#setMaxCache" class="tsd-index-link tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>set<wbr/>Max<wbr/>Cache</span></a>
 <a href="_guildedts_framework._internal_.ServerMemberManager.html#setNickname" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>set<wbr/>Nickname</span></a>
+<a href="_guildedts_framework._internal_.ServerMemberManager.html#setXp" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>set<wbr/>Xp</span></a>
 <a href="_guildedts_framework._internal_.ServerMemberManager.html#unban" class="tsd-index-link tsd-kind-method tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg><span>unban</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
@@ -104,7 +105,7 @@
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>Award XP to a member in the server.</p>
 
-<h3>Returns</h3><p>The total amount of XP the member has.</p>
+<h3>Returns</h3><p>The total amount of XP the server member has.</p>
 
 <h3>Example</h3><pre><code class="language-ts"><span class="hl-1">members.</span><span class="hl-5">awardXp</span><span class="hl-1">(member, </span><span class="hl-4">100</span><span class="hl-1">);</span>
 </code></pre>
@@ -309,6 +310,32 @@
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
 <li>Defined in guilded.ts/typings/managers/server/ServerMemberManager.d.ts:47</li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="setXp" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>set<wbr/>Xp</span><a href="#setXp" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+<li class="tsd-signature tsd-anchor-link" id="setXp.setXp-1">set<wbr/>Xp<span class="tsd-signature-symbol">(</span>member<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../modules/_guildedts_framework._internal_.html" class="tsd-signature-type" data-tsd-kind="Namespace">&lt;internal&gt;</a><span class="tsd-signature-symbol">.</span><a href="_guildedts_framework._internal_.ServerMember.html" class="tsd-signature-type" data-tsd-kind="Class">ServerMember</a>, amount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><a href="#setXp.setXp-1" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></li>
+<li class="tsd-description">
+<div class="tsd-comment tsd-typography"><p>Set XP of a member in the server.</p>
+
+<h3>Returns</h3><p>The total amount of XP the server member has.</p>
+
+<h3>Example</h3><pre><code class="language-ts"><span class="hl-1">members.</span><span class="hl-5">setXp</span><span class="hl-1">(member, </span><span class="hl-4">100</span><span class="hl-1">);</span>
+</code></pre>
+</div>
+<div class="tsd-parameters">
+<h4 class="tsd-parameters-title">Parameters</h4>
+<ul class="tsd-parameter-list">
+<li>
+<h5>member: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../modules/_guildedts_framework._internal_.html" class="tsd-signature-type" data-tsd-kind="Namespace">&lt;internal&gt;</a><span class="tsd-signature-symbol">.</span><a href="_guildedts_framework._internal_.ServerMember.html" class="tsd-signature-type" data-tsd-kind="Class">ServerMember</a></h5>
+<div class="tsd-comment tsd-typography"><p>The member to set XP for.</p>
+</div></li>
+<li>
+<h5>amount: <span class="tsd-signature-type">number</span></h5>
+<div class="tsd-comment tsd-typography"><p>The total XP of the server member.</p>
+</div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
+<ul>
+<li>Defined in guilded.ts/typings/managers/server/ServerMemberManager.d.ts:89</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="unban" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>unban</span><a href="#unban" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -380,5 +407,6 @@
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="_guildedts_framework._internal_.ServerMemberManager.html#removeNickname" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>remove<wbr/>Nickname</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_guildedts_framework._internal_.ServerMemberManager.html#setMaxCache" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>set<wbr/>Max<wbr/>Cache</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="_guildedts_framework._internal_.ServerMemberManager.html#setNickname" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>set<wbr/>Nickname</a></li>
+<li class="tsd-kind-method tsd-parent-kind-class"><a href="_guildedts_framework._internal_.ServerMemberManager.html#setXp" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>set<wbr/>Xp</a></li>
 <li class="tsd-kind-method tsd-parent-kind-class"><a href="_guildedts_framework._internal_.ServerMemberManager.html#unban" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-2048-path"></use><use href="#icon-2048-text"></use></svg>unban</a></li></ul></li></ul></nav></div></div>
 <div class="overlay"></div><script src="../assets/main.js"></script></body></html>
