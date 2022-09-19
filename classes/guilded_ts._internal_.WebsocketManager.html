@@ -29,7 +29,7 @@
 <li><span class="target">WebsocketManager</span></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
 <li>Defined in ws/typings/WebsocketManager.d.ts:9</li>
-<li>Defined in ws/typings/WebsocketManager.d.ts:61</li></ul></aside>
+<li>Defined in ws/typings/WebsocketManager.d.ts:63</li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -45,6 +45,7 @@
 <a href="guilded_ts._internal_.WebsocketManager.html#options" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>options</span></a>
 <a href="guilded_ts._internal_.WebsocketManager.html#ping" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>ping</span></a>
 <a href="guilded_ts._internal_.WebsocketManager.html#pingedAt" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>pinged<wbr/>At</span></a>
+<a href="guilded_ts._internal_.WebsocketManager.html#proxyUrl" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>proxy<wbr/>Url</span></a>
 <a href="guilded_ts._internal_.WebsocketManager.html#readyAt" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>ready<wbr/>At</span></a>
 <a href="guilded_ts._internal_.WebsocketManager.html#reconnects" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>reconnects</span></a>
 <a href="guilded_ts._internal_.WebsocketManager.html#socket" class="tsd-index-link tsd-kind-property tsd-parent-kind-class"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>socket</span></a>
@@ -81,7 +82,7 @@
 <h4 class="tsd-returns-title">Returns <a href="../modules/guilded_ts._internal_.html" class="tsd-signature-type" data-tsd-kind="Namespace">&lt;internal&gt;</a><span class="tsd-signature-symbol">.</span><a href="guilded_ts._internal_.WebsocketManager.html" class="tsd-signature-type" data-tsd-kind="Class">WebsocketManager</a></h4><aside class="tsd-sources">
 <p>Overrides EventEmitter.constructor</p>
 <ul>
-<li>Defined in ws/typings/WebsocketManager.d.ts:28</li></ul></aside></li></ul></section></section>
+<li>Defined in ws/typings/WebsocketManager.d.ts:30</li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="lastMessageId" class="tsd-anchor"></a>
@@ -90,7 +91,7 @@
 <div class="tsd-comment tsd-typography"><p>The last message ID.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in ws/typings/WebsocketManager.d.ts:26</li></ul></aside></section>
+<li>Defined in ws/typings/WebsocketManager.d.ts:28</li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="options" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>options</span><a href="#options" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">options<span class="tsd-signature-symbol">:</span> <a href="../modules/guilded_ts._internal_.html" class="tsd-signature-type" data-tsd-kind="Namespace">&lt;internal&gt;</a><span class="tsd-signature-symbol">.</span><a href="../interfaces/guilded_ts._internal_.WebsocketOptions.html" class="tsd-signature-type" data-tsd-kind="Interface">WebsocketOptions</a></div><aside class="tsd-sources">
@@ -102,35 +103,42 @@
 <div class="tsd-comment tsd-typography"><p>The ping of the websocket connection.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in ws/typings/WebsocketManager.d.ts:20</li></ul></aside></section>
+<li>Defined in ws/typings/WebsocketManager.d.ts:22</li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="pingedAt" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>pinged<wbr/>At</span><a href="#pingedAt" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">pinged<wbr/>At<span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">Date</span></div>
 <div class="tsd-comment tsd-typography"><p>The date the websocket was pinged.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in ws/typings/WebsocketManager.d.ts:22</li></ul></aside></section>
+<li>Defined in ws/typings/WebsocketManager.d.ts:24</li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="proxyUrl" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>proxy<wbr/>Url</span><a href="#proxyUrl" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">proxy<wbr/>Url<span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>The proxy URL of the Websocket API.</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in ws/typings/WebsocketManager.d.ts:16</li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="readyAt" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>ready<wbr/>At</span><a href="#readyAt" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">ready<wbr/>At<span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">Date</span></div>
 <div class="tsd-comment tsd-typography"><p>The date the websocket is ready.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in ws/typings/WebsocketManager.d.ts:18</li></ul></aside></section>
+<li>Defined in ws/typings/WebsocketManager.d.ts:20</li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="reconnects" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>reconnects</span><a href="#reconnects" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">reconnects<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 <div class="tsd-comment tsd-typography"><p>The anount of times the websocket has been reconnected.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in ws/typings/WebsocketManager.d.ts:24</li></ul></aside></section>
+<li>Defined in ws/typings/WebsocketManager.d.ts:26</li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="socket" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>socket</span><a href="#socket" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">socket<span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">WebSocket</span></div>
 <div class="tsd-comment tsd-typography"><p>The websocket.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in ws/typings/WebsocketManager.d.ts:16</li></ul></aside></section>
+<li>Defined in ws/typings/WebsocketManager.d.ts:18</li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="token" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>token</span><a href="#token" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">token<span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div>
@@ -139,8 +147,8 @@
 <ul>
 <li>Defined in ws/typings/WebsocketManager.d.ts:12</li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class"><a id="version" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagReadonly">Readonly</code> <span>version</span><a href="#version" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
-<div class="tsd-signature">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <code class="tsd-tag ts-flagReadonly">Readonly</code> <span>version</span><a href="#version" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">version<span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span></div>
 <div class="tsd-comment tsd-typography"><p>The version of the Websocket API.</p>
 </div><aside class="tsd-sources">
 <ul>
@@ -156,7 +164,7 @@
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in ws/typings/WebsocketManager.d.ts:30</li></ul></aside></li></ul></section>
+<li>Defined in ws/typings/WebsocketManager.d.ts:32</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="pingedTimestamp" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>pinged<wbr/>Timestamp</span><a href="#pingedTimestamp" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
@@ -166,7 +174,7 @@
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in ws/typings/WebsocketManager.d.ts:34</li></ul></aside></li></ul></section>
+<li>Defined in ws/typings/WebsocketManager.d.ts:36</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="readyTimestamp" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>ready<wbr/>Timestamp</span><a href="#readyTimestamp" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
@@ -176,7 +184,7 @@
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in ws/typings/WebsocketManager.d.ts:32</li></ul></aside></li></ul></section>
+<li>Defined in ws/typings/WebsocketManager.d.ts:34</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="uptime" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>uptime</span><a href="#uptime" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
@@ -186,17 +194,17 @@
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in ws/typings/WebsocketManager.d.ts:36</li></ul></aside></li></ul></section>
+<li>Defined in ws/typings/WebsocketManager.d.ts:38</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-accessor tsd-parent-kind-class"><a id="url" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>url</span><a href="#url" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-accessor tsd-parent-kind-class">
-<li class="tsd-signature" id="url.url-1"><span class="tsd-signature-symbol">get</span> url<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">`</span><span class="tsd-signature-type">wss://www.guilded.gg/websocket/v</span><span class="tsd-signature-symbol">${</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">`</span></li>
+<li class="tsd-signature" id="url.url-1"><span class="tsd-signature-symbol">get</span> url<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 <li class="tsd-description">
 <div class="tsd-comment tsd-typography"><p>The URL of the Websocket.</p>
 </div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">`</span><span class="tsd-signature-type">wss://www.guilded.gg/websocket/v</span><span class="tsd-signature-symbol">${</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">`</span></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in ws/typings/WebsocketManager.d.ts:38</li></ul></aside></li></ul></section></section>
+<li>Defined in ws/typings/WebsocketManager.d.ts:40</li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="connect" class="tsd-anchor"></a>
@@ -220,7 +228,7 @@
 </div></li></ul></div>
 <h4 class="tsd-returns-title">Returns <a href="../modules/guilded_ts._internal_.html" class="tsd-signature-type" data-tsd-kind="Namespace">&lt;internal&gt;</a><span class="tsd-signature-symbol">.</span><a href="guilded_ts._internal_.WebsocketManager.html" class="tsd-signature-type" data-tsd-kind="Class">WebsocketManager</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in ws/typings/WebsocketManager.d.ts:45</li></ul></aside></li></ul></section>
+<li>Defined in ws/typings/WebsocketManager.d.ts:47</li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class"><a id="disconnect" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>disconnect</span><a href="#disconnect" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -235,7 +243,7 @@
 </div>
 <h4 class="tsd-returns-title">Returns <a href="../modules/guilded_ts._internal_.html" class="tsd-signature-type" data-tsd-kind="Namespace">&lt;internal&gt;</a><span class="tsd-signature-symbol">.</span><a href="guilded_ts._internal_.WebsocketManager.html" class="tsd-signature-type" data-tsd-kind="Class">WebsocketManager</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in ws/typings/WebsocketManager.d.ts:51</li></ul></aside></li></ul></section></section></div>
+<li>Defined in ws/typings/WebsocketManager.d.ts:53</li></ul></aside></li></ul></section></section></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <div class="tsd-navigation settings">
 <details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
@@ -280,6 +288,7 @@
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="guilded_ts._internal_.WebsocketManager.html#options" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>options</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="guilded_ts._internal_.WebsocketManager.html#ping" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>ping</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="guilded_ts._internal_.WebsocketManager.html#pingedAt" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>pinged<wbr/>At</a></li>
+<li class="tsd-kind-property tsd-parent-kind-class"><a href="guilded_ts._internal_.WebsocketManager.html#proxyUrl" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>proxy<wbr/>Url</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="guilded_ts._internal_.WebsocketManager.html#readyAt" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>ready<wbr/>At</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="guilded_ts._internal_.WebsocketManager.html#reconnects" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>reconnects</a></li>
 <li class="tsd-kind-property tsd-parent-kind-class"><a href="guilded_ts._internal_.WebsocketManager.html#socket" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>socket</a></li>
