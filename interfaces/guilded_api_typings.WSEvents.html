@@ -26,7 +26,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">WSEvents</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L47">guilded-api-typings/src/v1/WS.ts:47</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L47">guilded-api-typings/src/v1/WS.ts:47</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -35,6 +35,7 @@
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Properties</h3>
 <div class="tsd-index-list"><a href="guilded_api_typings.WSEvents.html#BotServerMembershipCreated" class="tsd-index-link tsd-kind-property tsd-parent-kind-interface"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12" id="icon-1024-path"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)" id="icon-1024-text"></path></svg><span>Bot<wbr/>Server<wbr/>Membership<wbr/>Created</span></a>
+<a href="guilded_api_typings.WSEvents.html#BotServerMembershipDeleted" class="tsd-index-link tsd-kind-property tsd-parent-kind-interface"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>Bot<wbr/>Server<wbr/>Membership<wbr/>Deleted</span></a>
 <a href="guilded_api_typings.WSEvents.html#CalendarEventCreated" class="tsd-index-link tsd-kind-property tsd-parent-kind-interface"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>Calendar<wbr/>Event<wbr/>Created</span></a>
 <a href="guilded_api_typings.WSEvents.html#CalendarEventDeleted" class="tsd-index-link tsd-kind-property tsd-parent-kind-interface"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>Calendar<wbr/>Event<wbr/>Deleted</span></a>
 <a href="guilded_api_typings.WSEvents.html#CalendarEventRsvpDeleted" class="tsd-index-link tsd-kind-property tsd-parent-kind-interface"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg><span>Calendar<wbr/>Event<wbr/>Rsvp<wbr/>Deleted</span></a>
@@ -94,7 +95,27 @@
 <div class="tsd-comment tsd-typography"><p>The server the bot was added to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L52">guilded-api-typings/src/v1/WS.ts:52</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L52">guilded-api-typings/src/v1/WS.ts:52</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="BotServerMembershipDeleted" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>Bot<wbr/>Server<wbr/>Membership<wbr/>Deleted</span><a href="#BotServerMembershipDeleted" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
+<div class="tsd-signature">Bot<wbr/>Server<wbr/>Membership<wbr/>Deleted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>deletedBy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span>server<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIServer.html" class="tsd-signature-type" data-tsd-kind="Interface">APIServer</a><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
+<div class="tsd-comment tsd-typography"><p>Emitted when the bot is removed from a server.</p>
+
+<h3>See</h3><p><a href="https://www.guilded.gg/docs/api/websockets/BotServerMembershipDeleted">https://www.guilded.gg/docs/api/websockets/BotServerMembershipDeleted</a></p>
+</div>
+<div class="tsd-type-declaration">
+<h4>Type declaration</h4>
+<ul class="tsd-parameters">
+<li class="tsd-parameter">
+<h5>deleted<wbr/>By<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+<div class="tsd-comment tsd-typography"><p>The ID of the user that removed the bot from the server.</p>
+</div></li>
+<li class="tsd-parameter">
+<h5>server<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIServer.html" class="tsd-signature-type" data-tsd-kind="Interface">APIServer</a></h5>
+<div class="tsd-comment tsd-typography"><p>The server the bot was removed from.</p>
+</div></li></ul></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L62">guilded-api-typings/src/v1/WS.ts:62</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="CalendarEventCreated" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Calendar<wbr/>Event<wbr/>Created</span><a href="#CalendarEventCreated" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Calendar<wbr/>Event<wbr/>Created<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>calendarEvent<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APICalendarEvent.html" class="tsd-signature-type" data-tsd-kind="Interface">APICalendarEvent</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -114,7 +135,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the calendar event belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L246">guilded-api-typings/src/v1/WS.ts:246</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L256">guilded-api-typings/src/v1/WS.ts:256</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="CalendarEventDeleted" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Calendar<wbr/>Event<wbr/>Deleted</span><a href="#CalendarEventDeleted" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Calendar<wbr/>Event<wbr/>Deleted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>calendarEvent<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APICalendarEvent.html" class="tsd-signature-type" data-tsd-kind="Interface">APICalendarEvent</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -134,7 +155,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the calendar event belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L266">guilded-api-typings/src/v1/WS.ts:266</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L276">guilded-api-typings/src/v1/WS.ts:276</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="CalendarEventRsvpDeleted" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Calendar<wbr/>Event<wbr/>Rsvp<wbr/>Deleted</span><a href="#CalendarEventRsvpDeleted" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Calendar<wbr/>Event<wbr/>Rsvp<wbr/>Deleted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>calendarEventRsvp<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APICalendarEventRsvp.html" class="tsd-signature-type" data-tsd-kind="Interface">APICalendarEventRsvp</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -154,7 +175,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the calendar event RSVP belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L366">guilded-api-typings/src/v1/WS.ts:366</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L376">guilded-api-typings/src/v1/WS.ts:376</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="CalendarEventRsvpManyUpdated" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Calendar<wbr/>Event<wbr/>Rsvp<wbr/>Many<wbr/>Updated</span><a href="#CalendarEventRsvpManyUpdated" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Calendar<wbr/>Event<wbr/>Rsvp<wbr/>Many<wbr/>Updated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>calendarEventRsvps<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APICalendarEventRsvp.html" class="tsd-signature-type" data-tsd-kind="Interface">APICalendarEventRsvp</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -174,7 +195,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the calendar event RSVPs belong to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L356">guilded-api-typings/src/v1/WS.ts:356</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L366">guilded-api-typings/src/v1/WS.ts:366</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="CalendarEventRsvpUpdated" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Calendar<wbr/>Event<wbr/>Rsvp<wbr/>Updated</span><a href="#CalendarEventRsvpUpdated" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Calendar<wbr/>Event<wbr/>Rsvp<wbr/>Updated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>calendarEventRsvp<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APICalendarEventRsvp.html" class="tsd-signature-type" data-tsd-kind="Interface">APICalendarEventRsvp</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -194,7 +215,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the calendar event RSVP belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L346">guilded-api-typings/src/v1/WS.ts:346</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L356">guilded-api-typings/src/v1/WS.ts:356</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="CalendarEventUpdated" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Calendar<wbr/>Event<wbr/>Updated</span><a href="#CalendarEventUpdated" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Calendar<wbr/>Event<wbr/>Updated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>calendarEvent<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APICalendarEvent.html" class="tsd-signature-type" data-tsd-kind="Interface">APICalendarEvent</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -214,7 +235,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the calendar event belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L256">guilded-api-typings/src/v1/WS.ts:256</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L266">guilded-api-typings/src/v1/WS.ts:266</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ChannelMessageReactionCreated" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Channel<wbr/>Message<wbr/>Reaction<wbr/>Created</span><a href="#ChannelMessageReactionCreated" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Channel<wbr/>Message<wbr/>Reaction<wbr/>Created<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>reaction<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIMessageReaction.html" class="tsd-signature-type" data-tsd-kind="Interface">APIMessageReaction</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -234,7 +255,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the message belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L426">guilded-api-typings/src/v1/WS.ts:426</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L436">guilded-api-typings/src/v1/WS.ts:436</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ChannelMessageReactionDeleted" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Channel<wbr/>Message<wbr/>Reaction<wbr/>Deleted</span><a href="#ChannelMessageReactionDeleted" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Channel<wbr/>Message<wbr/>Reaction<wbr/>Deleted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>reaction<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIMessageReaction.html" class="tsd-signature-type" data-tsd-kind="Interface">APIMessageReaction</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -254,7 +275,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the message belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L436">guilded-api-typings/src/v1/WS.ts:436</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L446">guilded-api-typings/src/v1/WS.ts:446</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ChatMessageCreated" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Chat<wbr/>Message<wbr/>Created</span><a href="#ChatMessageCreated" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Chat<wbr/>Message<wbr/>Created<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>message<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIMessage.html" class="tsd-signature-type" data-tsd-kind="Interface">APIMessage</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -274,7 +295,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the message belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L62">guilded-api-typings/src/v1/WS.ts:62</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L72">guilded-api-typings/src/v1/WS.ts:72</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ChatMessageDeleted" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Chat<wbr/>Message<wbr/>Deleted</span><a href="#ChatMessageDeleted" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Chat<wbr/>Message<wbr/>Deleted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>message<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIMessageSummary.html" class="tsd-signature-type" data-tsd-kind="Interface">APIMessageSummary</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -294,7 +315,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the message belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L82">guilded-api-typings/src/v1/WS.ts:82</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L92">guilded-api-typings/src/v1/WS.ts:92</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ChatMessageUpdated" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Chat<wbr/>Message<wbr/>Updated</span><a href="#ChatMessageUpdated" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Chat<wbr/>Message<wbr/>Updated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>message<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIMessage.html" class="tsd-signature-type" data-tsd-kind="Interface">APIMessage</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -314,7 +335,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the message belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L72">guilded-api-typings/src/v1/WS.ts:72</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L82">guilded-api-typings/src/v1/WS.ts:82</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="DocCreated" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Doc<wbr/>Created</span><a href="#DocCreated" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Doc<wbr/>Created<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>doc<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIDoc.html" class="tsd-signature-type" data-tsd-kind="Interface">APIDoc</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -334,7 +355,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the doc belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L216">guilded-api-typings/src/v1/WS.ts:216</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L226">guilded-api-typings/src/v1/WS.ts:226</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="DocDeleted" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Doc<wbr/>Deleted</span><a href="#DocDeleted" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Doc<wbr/>Deleted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>doc<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIDoc.html" class="tsd-signature-type" data-tsd-kind="Interface">APIDoc</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -354,7 +375,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the doc belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L236">guilded-api-typings/src/v1/WS.ts:236</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L246">guilded-api-typings/src/v1/WS.ts:246</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="DocUpdated" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Doc<wbr/>Updated</span><a href="#DocUpdated" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Doc<wbr/>Updated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>doc<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIDoc.html" class="tsd-signature-type" data-tsd-kind="Interface">APIDoc</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -374,7 +395,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the doc belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L226">guilded-api-typings/src/v1/WS.ts:226</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L236">guilded-api-typings/src/v1/WS.ts:236</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ForumTopicCreated" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Forum<wbr/>Topic<wbr/>Created</span><a href="#ForumTopicCreated" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Forum<wbr/>Topic<wbr/>Created<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>forumTopic<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIForumTopic.html" class="tsd-signature-type" data-tsd-kind="Interface">APIForumTopic</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -394,7 +415,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the forum topic belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L276">guilded-api-typings/src/v1/WS.ts:276</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L286">guilded-api-typings/src/v1/WS.ts:286</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ForumTopicDeleted" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Forum<wbr/>Topic<wbr/>Deleted</span><a href="#ForumTopicDeleted" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Forum<wbr/>Topic<wbr/>Deleted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>forumTopic<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIForumTopic.html" class="tsd-signature-type" data-tsd-kind="Interface">APIForumTopic</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -414,7 +435,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the forum topic belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L296">guilded-api-typings/src/v1/WS.ts:296</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L306">guilded-api-typings/src/v1/WS.ts:306</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ForumTopicLocked" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Forum<wbr/>Topic<wbr/>Locked</span><a href="#ForumTopicLocked" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Forum<wbr/>Topic<wbr/>Locked<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>forumTopic<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIForumTopic.html" class="tsd-signature-type" data-tsd-kind="Interface">APIForumTopic</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -434,7 +455,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the forum topic belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L326">guilded-api-typings/src/v1/WS.ts:326</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L336">guilded-api-typings/src/v1/WS.ts:336</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ForumTopicPinned" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Forum<wbr/>Topic<wbr/>Pinned</span><a href="#ForumTopicPinned" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Forum<wbr/>Topic<wbr/>Pinned<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>forumTopic<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIForumTopic.html" class="tsd-signature-type" data-tsd-kind="Interface">APIForumTopic</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -454,7 +475,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the forum topic belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L306">guilded-api-typings/src/v1/WS.ts:306</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L316">guilded-api-typings/src/v1/WS.ts:316</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ForumTopicUnlocked" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Forum<wbr/>Topic<wbr/>Unlocked</span><a href="#ForumTopicUnlocked" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Forum<wbr/>Topic<wbr/>Unlocked<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>forumTopic<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIForumTopic.html" class="tsd-signature-type" data-tsd-kind="Interface">APIForumTopic</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -474,7 +495,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the forum topic belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L336">guilded-api-typings/src/v1/WS.ts:336</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L346">guilded-api-typings/src/v1/WS.ts:346</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ForumTopicUnpinned" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Forum<wbr/>Topic<wbr/>Unpinned</span><a href="#ForumTopicUnpinned" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Forum<wbr/>Topic<wbr/>Unpinned<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>forumTopic<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIForumTopic.html" class="tsd-signature-type" data-tsd-kind="Interface">APIForumTopic</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -494,7 +515,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the forum topic belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L316">guilded-api-typings/src/v1/WS.ts:316</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L326">guilded-api-typings/src/v1/WS.ts:326</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ForumTopicUpdated" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Forum<wbr/>Topic<wbr/>Updated</span><a href="#ForumTopicUpdated" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Forum<wbr/>Topic<wbr/>Updated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>forumTopic<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIForumTopic.html" class="tsd-signature-type" data-tsd-kind="Interface">APIForumTopic</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -514,7 +535,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the forum topic belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L286">guilded-api-typings/src/v1/WS.ts:286</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L296">guilded-api-typings/src/v1/WS.ts:296</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ListItemCompleted" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>List<wbr/>Item<wbr/>Completed</span><a href="#ListItemCompleted" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">List<wbr/>Item<wbr/>Completed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>listItem<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIListItem.html" class="tsd-signature-type" data-tsd-kind="Interface">APIListItem</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -534,7 +555,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the list item belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L406">guilded-api-typings/src/v1/WS.ts:406</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L416">guilded-api-typings/src/v1/WS.ts:416</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ListItemCreated" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>List<wbr/>Item<wbr/>Created</span><a href="#ListItemCreated" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">List<wbr/>Item<wbr/>Created<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>listItem<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIListItem.html" class="tsd-signature-type" data-tsd-kind="Interface">APIListItem</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -554,7 +575,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the list item belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L376">guilded-api-typings/src/v1/WS.ts:376</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L386">guilded-api-typings/src/v1/WS.ts:386</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ListItemDeleted" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>List<wbr/>Item<wbr/>Deleted</span><a href="#ListItemDeleted" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">List<wbr/>Item<wbr/>Deleted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>listItem<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIListItem.html" class="tsd-signature-type" data-tsd-kind="Interface">APIListItem</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -574,7 +595,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the list item belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L396">guilded-api-typings/src/v1/WS.ts:396</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L406">guilded-api-typings/src/v1/WS.ts:406</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ListItemUncompleted" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>List<wbr/>Item<wbr/>Uncompleted</span><a href="#ListItemUncompleted" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">List<wbr/>Item<wbr/>Uncompleted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>listItem<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIListItem.html" class="tsd-signature-type" data-tsd-kind="Interface">APIListItem</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -594,7 +615,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server thw list item belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L416">guilded-api-typings/src/v1/WS.ts:416</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L426">guilded-api-typings/src/v1/WS.ts:426</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ListItemUpdated" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>List<wbr/>Item<wbr/>Updated</span><a href="#ListItemUpdated" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">List<wbr/>Item<wbr/>Updated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>listItem<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIListItem.html" class="tsd-signature-type" data-tsd-kind="Interface">APIListItem</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -614,7 +635,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the list item belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L386">guilded-api-typings/src/v1/WS.ts:386</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L396">guilded-api-typings/src/v1/WS.ts:396</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ServerChannelCreated" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Server<wbr/>Channel<wbr/>Created</span><a href="#ServerChannelCreated" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Server<wbr/>Channel<wbr/>Created<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>channel<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIChannel.html" class="tsd-signature-type" data-tsd-kind="Interface">APIChannel</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -634,7 +655,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the channel belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L166">guilded-api-typings/src/v1/WS.ts:166</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L176">guilded-api-typings/src/v1/WS.ts:176</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ServerChannelDeleted" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Server<wbr/>Channel<wbr/>Deleted</span><a href="#ServerChannelDeleted" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Server<wbr/>Channel<wbr/>Deleted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>channel<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIChannel.html" class="tsd-signature-type" data-tsd-kind="Interface">APIChannel</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -654,7 +675,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the channel belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L186">guilded-api-typings/src/v1/WS.ts:186</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L196">guilded-api-typings/src/v1/WS.ts:196</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ServerChannelUpdated" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Server<wbr/>Channel<wbr/>Updated</span><a href="#ServerChannelUpdated" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Server<wbr/>Channel<wbr/>Updated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>channel<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIChannel.html" class="tsd-signature-type" data-tsd-kind="Interface">APIChannel</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -674,7 +695,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the channel belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L176">guilded-api-typings/src/v1/WS.ts:176</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L186">guilded-api-typings/src/v1/WS.ts:186</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ServerMemberBanned" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Server<wbr/>Member<wbr/>Banned</span><a href="#ServerMemberBanned" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Server<wbr/>Member<wbr/>Banned<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverMemberBan<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIServerBan.html" class="tsd-signature-type" data-tsd-kind="Interface">APIServerBan</a><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -694,7 +715,7 @@
 <div class="tsd-comment tsd-typography"><p>The created server ban.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L116">guilded-api-typings/src/v1/WS.ts:116</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L126">guilded-api-typings/src/v1/WS.ts:126</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ServerMemberJoined" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Server<wbr/>Member<wbr/>Joined</span><a href="#ServerMemberJoined" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Server<wbr/>Member<wbr/>Joined<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>member<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIServerMember.html" class="tsd-signature-type" data-tsd-kind="Interface">APIServerMember</a><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -714,7 +735,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the member belongs to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L92">guilded-api-typings/src/v1/WS.ts:92</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L102">guilded-api-typings/src/v1/WS.ts:102</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ServerMemberRemoved" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Server<wbr/>Member<wbr/>Removed</span><a href="#ServerMemberRemoved" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Server<wbr/>Member<wbr/>Removed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>isBan<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span><br/><span>    </span>isKick<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span>userId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -742,7 +763,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the member that left the server.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L102">guilded-api-typings/src/v1/WS.ts:102</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L112">guilded-api-typings/src/v1/WS.ts:112</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ServerMemberUnbanned" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Server<wbr/>Member<wbr/>Unbanned</span><a href="#ServerMemberUnbanned" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Server<wbr/>Member<wbr/>Unbanned<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverMemberBan<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIServerBan.html" class="tsd-signature-type" data-tsd-kind="Interface">APIServerBan</a><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -762,7 +783,7 @@
 <div class="tsd-comment tsd-typography"><p>The deleted server ban.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L126">guilded-api-typings/src/v1/WS.ts:126</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L136">guilded-api-typings/src/v1/WS.ts:136</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ServerMemberUpdated" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Server<wbr/>Member<wbr/>Updated</span><a href="#ServerMemberUpdated" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Server<wbr/>Member<wbr/>Updated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span>userInfo<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span><br/><span>        </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>        </span>nickname<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -791,7 +812,7 @@
 <div class="tsd-comment tsd-typography"><p>The nickname of the member.</p>
 </div></li></ul></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L136">guilded-api-typings/src/v1/WS.ts:136</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L146">guilded-api-typings/src/v1/WS.ts:146</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ServerRolesUpdated" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Server<wbr/>Roles<wbr/>Updated</span><a href="#ServerRolesUpdated" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Server<wbr/>Roles<wbr/>Updated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>memberRoleIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span><br/><span>        </span>roleIds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span><br/><span>        </span>userId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span><span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -811,7 +832,7 @@
 <div class="tsd-comment tsd-typography"><p>The ID of the server the roles belong to.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L151">guilded-api-typings/src/v1/WS.ts:151</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L161">guilded-api-typings/src/v1/WS.ts:161</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ServerWebhookCreated" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Server<wbr/>Webhook<wbr/>Created</span><a href="#ServerWebhookCreated" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Server<wbr/>Webhook<wbr/>Created<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span>webhook<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIWebhook.html" class="tsd-signature-type" data-tsd-kind="Interface">APIWebhook</a><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -831,7 +852,7 @@
 <div class="tsd-comment tsd-typography"><p>The created webhook.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L196">guilded-api-typings/src/v1/WS.ts:196</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L206">guilded-api-typings/src/v1/WS.ts:206</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"><a id="ServerWebhookUpdated" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>Server<wbr/>Webhook<wbr/>Updated</span><a href="#ServerWebhookUpdated" aria-label="Permalink" class="tsd-anchor-icon"><svg class="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-anchor-a"></use><use href="#icon-anchor-b"></use><use href="#icon-anchor-c"></use></svg></a></h3>
 <div class="tsd-signature">Server<wbr/>Webhook<wbr/>Updated<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span><br/><span>    </span>serverId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span><br/><span>    </span>webhook<span class="tsd-signature-symbol">: </span><a href="guilded_api_typings.APIWebhook.html" class="tsd-signature-type" data-tsd-kind="Interface">APIWebhook</a><span class="tsd-signature-symbol">; </span><br/><span class="tsd-signature-symbol">}</span></div>
@@ -851,7 +872,7 @@
 <div class="tsd-comment tsd-typography"><p>The edited webhook.</p>
 </div></li></ul></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/a8801bb/packages/guilded-api-typings/src/v1/WS.ts#L206">guilded-api-typings/src/v1/WS.ts:206</a></li></ul></aside></section></section></div>
+<li>Defined in <a href="https://github.com/guildedts/guilded.ts/blob/02b2ae3/packages/guilded-api-typings/src/v1/WS.ts#L216">guilded-api-typings/src/v1/WS.ts:216</a></li></ul></aside></section></section></div>
 <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 <div class="tsd-navigation settings">
 <details class="tsd-index-accordion"><summary class="tsd-accordion-summary">
@@ -893,6 +914,7 @@
 <li class="current tsd-kind-interface tsd-parent-kind-module"><a href="guilded_api_typings.WSEvents.html" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-interface)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-256-path"></rect><path d="M9.51 16V15.016H11.298V8.224H9.51V7.24H14.19V8.224H12.402V15.016H14.19V16H9.51Z" fill="var(--color-text)" id="icon-256-text"></path></svg><span>WSEvents</span></a>
 <ul>
 <li class="tsd-kind-property tsd-parent-kind-interface"><a href="guilded_api_typings.WSEvents.html#BotServerMembershipCreated" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>Bot<wbr/>Server<wbr/>Membership<wbr/>Created</a></li>
+<li class="tsd-kind-property tsd-parent-kind-interface"><a href="guilded_api_typings.WSEvents.html#BotServerMembershipDeleted" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>Bot<wbr/>Server<wbr/>Membership<wbr/>Deleted</a></li>
 <li class="tsd-kind-property tsd-parent-kind-interface"><a href="guilded_api_typings.WSEvents.html#CalendarEventCreated" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>Calendar<wbr/>Event<wbr/>Created</a></li>
 <li class="tsd-kind-property tsd-parent-kind-interface"><a href="guilded_api_typings.WSEvents.html#CalendarEventDeleted" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>Calendar<wbr/>Event<wbr/>Deleted</a></li>
 <li class="tsd-kind-property tsd-parent-kind-interface"><a href="guilded_api_typings.WSEvents.html#CalendarEventRsvpDeleted" class="tsd-index-link"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-1024-path"></use><use href="#icon-1024-text"></use></svg>Calendar<wbr/>Event<wbr/>Rsvp<wbr/>Deleted</a></li>
